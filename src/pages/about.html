@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div>
+            <h1>Que es el efecto 2k38?</h1>
+            <p>En informática, el problema del año 2038 (conocido también por el numerónimo Y2K38) podría causar que una parte del software falle en ese año. El problema afecta a los programas que usen la representación del tiempo basada en el sistema POSIX (Tiempo Unix), que se basa en contar el número de segundos transcurridos desde la noche del 1 de enero de 1970 a las 00:00:00 (ignorando los segundos intercalares)</p>
+            <p>Esta representación es un estándar de facto en los sistemas tipo Unix y también en los programas escritos para muchos otros sistemas operativos debido al gran alcance del lenguaje de programación C. En la mayoría de sistemas de 32 bits, el tipo de dato time_t usado para guardar el contador de segundos es un entero de 32 bits con signo, es decir, que puede representar un rango de números entre -2 147 483 648 y 2 147 483 647 (-231 y 231-1; 1 bit para el signo, y 31 para representar su valor en complemento a dos), por lo que el último segundo representable con este formato será a las 03:14:07 UTC del 19 de enero de 2038, cuando el contador llegue a 2 147 483 647. Un segundo después, el contador se desbordará y saltará al valor -2 147 483 648, que causará el fallo de programas que interpretarán el tiempo como que están en 1901 (dependiendo de la implementación), en vez de en 2038. A su vez, esto causaría cálculo y procesamiento incorrecto y causaría un problema mundial.</p>
+        </div>
+
+        <div>
+            <h2>Páginas con buena info</h2>
+            <a href="https://y2038.com/">Pro articles</a>
+            <a href="https://ltbatis.medium.com/the-2038-problem-a-ticking-time-bomb-in-embedded-systems-5119c7720285">Revista online</a>
+            <a href="https://www.codereliant.io/the-2038-problem/">Bona explicació</a>
+        </div>
+
+        <div>
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
