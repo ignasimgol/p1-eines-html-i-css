@@ -23,10 +23,10 @@ class FlipDown {
         this.opts = {
             theme: "dark",
             headings: [
-                "Days",
-                "Hours",
-                "Minutes",
-                "Seconds"
+                "D\xcdAS",
+                "HORAS",
+                "MINUTOS",
+                "SEGUNDOS"
             ]
         };
         this._setOptions();
@@ -188,4 +188,4 @@ function appendChildren(parent, children) {
     });
 }
 
-//# sourceMappingURL=index.816e7b21.js.map
+//# sourceMappingURL=index.87fd930a.js.map

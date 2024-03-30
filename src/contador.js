@@ -26,7 +26,7 @@ class FlipDown {
     this.prevClockValuesAsString = [];
     this.opts = {
       theme: "dark",
-      headings: ["Days", "Hours", "Minutes", "Seconds"]
+      headings: ["DÍAS", "HORAS", "MINUTOS", "SEGUNDOS"]
     };
 
     this._setOptions();

@@ -10,5 +10,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const ver = document.getElementById("ver");
     ver.innerHTML = flipdown.version;
 });
+document.getElementById("btnBack").addEventListener("click", function() {
+    // Aquí puedes agregar la función que desees realizar al hacer clic en el botón de retroceso
+    console.log("Retroceso realizado");
+});
 
 //# sourceMappingURL=index.de158e3a.js.map
