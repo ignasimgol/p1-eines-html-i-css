@@ -2,12 +2,18 @@
 
 
 body {
-  height: 100vh;
   color: #E0E0E2;
   background-color: #292929;
   font-family: "Fira Code", monospace;
 }
 
+b {
+  color: #247BA0;
+}
+
+p {
+  font-size: 1.1rem;
+}
 
 .h1-index a {
   text-decoration: none;
@@ -22,9 +28,9 @@ body {
   font-style: italic;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
 
-  color: #000; /* Color del texto, ajusta según tu diseño */
+
+  color: #000; 
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 4px;
@@ -44,8 +50,6 @@ body {
   1px 22px 10px rgba(16,16,16,0.2),
   1px 25px 35px rgba(16,16,16,0.2),
   1px 30px 60px rgba(16,16,16,0.4);
-  
-
 }
 
 .h1-index:hover {
@@ -63,8 +67,6 @@ body {
   1px 22px 10px rgba(16,16,16,0.2),
   1px 25px 35px rgba(16,16,16,0.2),
   1px 30px 60px rgba(16,16,16,0.4);
-  
-
 }
 
 .title {
@@ -73,45 +75,69 @@ body {
 }
 
 .title p{
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 0rem 2rem 1rem 2rem;
 }
 
 .hidden {
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .text {
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 7rem 1rem 7rem;
+}
+
+.img-presentacion {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.img-detalle {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
 }
 
 .video-1{
   margin: 0 auto;
   justify-content: center;
   text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 
 /* ///////////////// back ////////////////*/
 
 #btnBack {
-  background-color: #4CAF50;
+
   border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: left;
-  justify-content: left;
+  color: black;
+  padding: 5px 5px;
+  text-align: center;
+  justify-content: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 10px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
-#btnBack box-icon {
-  margin-right: 5px;
+#btnBack:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #FFB20F;
+
 }
+
 
 
 /* ///////////////// MENU ////////////////*/
@@ -155,7 +181,6 @@ nav ul li a:hover {
   background-color: #FFB20F;;
 }
 
-/* Hamburger menu */
 
 nav ul li,
 ul li {
@@ -168,12 +193,92 @@ ul li a {
   color: #E0E0E2;
 }
 
+.h1-general {
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ant-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 0 8rem;
+  padding-bottom: 3rem;
+}
+
+.ant-1,
+.ant-2,
+.ant-3,
+.ant-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px 5px 20px 5px;
+}
+
+.ant-container img {
+  width: auto;
+  height: 45vh;
+  border-radius: 10px;
+}
+
+.link-text {
+  color: #E0E0E2;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.link-text:hover {
+  color: #FFB20F;
+}
+
+.link-text-2 {
+  color: #E0E0E2;
+  text-decoration: none;
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.text ul li {
+  list-style: circle;
+}
+
+ul li p {
+  margin-left: 2rem;
+}
+
+.link-text-2:hover {
+  color: #FFB20F;
+}
 
 
 
-/* CONTADOR  */
+p {
+  margin-top: 10px;
+}
 
-/********** Theme: dark **********/
+@media only screen and (max-width: 768px) {
+  .ant-container {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Hamburger menu */
+
+
+
+/* ++++++++++++++++++ CONTADOR +++++++++++++++++++ */
+
 /* Font styles */
 .flipdown.flipdown__theme-dark {
   font-family: sans-serif;
@@ -457,45 +562,3 @@ ul li a {
 }
 
 
-/* grid genereal.html  */
-
-.h1-general {
-  justify-content: center;
-  text-align: center;
-}
-.ant-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin: 0 8rem;
-  padding-bottom: 3rem;
-}
-
-.ant-1,
-.ant-2,
-.ant-3,
-.ant-4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-p {
-  margin-top: 10px;
-}
-
-@media only screen and (max-width: 768px) {
-  .ant-container {
-      grid-template-columns: 1fr;
-  }
-}

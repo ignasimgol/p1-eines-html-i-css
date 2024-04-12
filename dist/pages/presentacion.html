@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Qué es?</title>
     <link rel="stylesheet" href="/index.2cdaf7bc.css">
 </head>
 <body>
@@ -13,8 +13,7 @@
              <ul>
                  <li><a href="/index.html">Inicio</a></li>
                  <li><a href="/pages/presentacion.html">Que es?</a></li>
-                 <li><a href="/pages/general.html">Antecedentes</a></li>
-                 <li><a href="/pages/detalle.html">Artículo</a></li>
+                 <li><a href="/pages/categoria.html">Curiosidades</a></li>
                  <li><a href="/pages/enlaces.html">Enlaces</a></li>
              </ul>
          </nav>  
@@ -23,25 +22,20 @@
 
 
 
-    <button id="btnBack"><box-icon name="arrow-back"></box-icon> Atrás</button>
+    <button id="btnBack"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #000; transform: ; msFilter:"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg></button>
 
+   
 
     <main>
         <div class="text">
-            <h1>Que es el efecto 2k38?</h1>
-            <p>En informática, el problema del año 2038 (conocido también por el numerónimo Y2K38) podría causar que una parte del software falle en ese año. El problema afecta a los programas que usen la representación del tiempo basada en el sistema POSIX (Tiempo Unix), que se basa en contar el número de segundos transcurridos desde la noche del 1 de enero de 1970 a las 00:00:00 (ignorando los segundos intercalares)</p>
-            <p>Esta representación es un estándar de facto en los sistemas tipo Unix y también en los programas escritos para muchos otros sistemas operativos debido al gran alcance del lenguaje de programación C. En la mayoría de sistemas de 32 bits, el tipo de dato time_t usado para guardar el contador de segundos es un entero de 32 bits con signo, es decir, que puede representar un rango de números entre -2 147 483 648 y 2 147 483 647 (-231 y 231-1; 1 bit para el signo, y 31 para representar su valor en complemento a dos), por lo que el último segundo representable con este formato será a las 03:14:07 UTC del 19 de enero de 2038, cuando el contador llegue a 2 147 483 647. Un segundo después, el contador se desbordará y saltará al valor -2 147 483 648, que causará el fallo de programas que interpretarán el tiempo como que están en 1901 (dependiendo de la implementación), en vez de en 2038. A su vez, esto causaría cálculo y procesamiento incorrecto y causaría un problema mundial.</p>
-        </div>
-
-        <div class="text">
-            <h2>Páginas con buena info</h2>
-            <a href="https://y2038.com/">Pro articles</a>
-            <a href="https://ltbatis.medium.com/the-2038-problem-a-ticking-time-bomb-in-embedded-systems-5119c7720285">Revista online</a>
-            <a href="https://www.codereliant.io/the-2038-problem/">Bona explicació</a>
+            <h1 class="h1-general">Que es el efecto 2k38?</h1>
+            <p>En informática, el problema del año 2038 (conocido también por el numerónimo Y2K38) podría causar que una parte del software mudial falle en ese año. El problema afecta a los programas que usen la representación del tiempo basada en el <b>sistema POSIX (Tiempo Unix)</b>, que se basa en contar el número de segundos transcurridos desde la noche del 1 de enero de 1970 a las 00:00:00 (ignorando los segundos intercalares)</p>
+            <img src="/2038.39b66113.jpg" alt="unix meteorito" class="img-presentacion">
+            <p>Esta representación es un estándar de facto en los sistemas tipo Unix y también en los programas escritos para muchos otros sistemas operativos debido al gran alcance del lenguaje de programación en <b>el lenguaje C</b>. En la mayoría de <b>sistemas de 32 bits</b>, el tipo de dato time_t usado para guardar el contador de segundos es un entero de 32 bits con signo, es decir, que puede representar un rango de números entre -2 147 483 648 y 2 147 483 647 (-231 y 231-1; 1 bit para el signo, y 31 para representar su valor en complemento a dos), por lo que el último segundo representable con este formato será a las 03:14:07 UTC del 19 de enero de 2038, cuando el contador llegue a 2 147 483 647. Un segundo después, <b>el contador se desbordará y saltará al valor -2 147 483 648, que causará el fallo</b> de programas que interpretarán el tiempo como que están en 1901 (dependiendo de la implementación), en vez de en 2038. A su vez, esto causaría cálculo y procesamiento incorrecto y causaría un problema mundial.</p>
         </div>
 
         <div class="video-1">
-            <h2>Video de YouTube</h2>
+            <h2>Video explicativo de YouTube ⬇️</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/zZwzrlLc_oc" frameborder="0" allowfullscreen=""></iframe>
         </div>
     </main>

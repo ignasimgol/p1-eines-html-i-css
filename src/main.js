@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     ver.innerHTML = flipdown.version;
 });
 
+
 document.getElementById("btnBack").addEventListener("click", function() {
-  // Aquí puedes agregar la función que desees realizar al hacer clic en el botón de retroceso
-  console.log("Retroceso realizado");
+  // Retrocede a la página anterior en la historia del navegador
+  history.back();
 });

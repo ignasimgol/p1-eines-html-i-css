@@ -9,20 +9,37 @@
 <body>
     <include src="./src/components/header.html"></include>
 
+    <include src="./src/components/back-button.html"></include>
 
     <main>
-        <div>
+        <div class="h1-general">
             <h1>Resumen del artículo "Y2038-Y2042 Risks & Actions"</h1>
         </div>
 
-        <div class="texto">
-            <p>La lógica de fecha y hora es omnipresente en la mayoría de las aplicaciones de software, pero esta lógica es inherentemente compleja y propensa a errores debido a condiciones como años bisiestos, zonas horarias y desbordamientos. Dos importantes eventos de desbordamiento ocurrirán en los años 2038 y 2042, conocidos comúnmente como Y2038 y Y2042, respectivamente. Estos eventos, que están a 22 y 26 años de distancia, pueden parecer lejanos, pero el tiempo pasa rápido y ocurrirán dentro de la mayoría de nuestras vidas. Muchas aplicaciones, como pólizas de seguros de vida, préstamos hipotecarios y programas gubernamentales de jubilación y seguro social, ya trascienden 2038/2042 y están activas hoy en día con millones de clientes. Es importante que los líderes empresariales estén conscientes de estos eventos, ya que representan un riesgo serio para sus negocios, pero pueden ser abordados con una planificación adecuada.</p>
+        <div class="text">
+            <p>La lógica de fecha y hora es omnipresente en la mayoría de las aplicaciones de software, pero esta lógica es inherentemente compleja y propensa a errores debido a condiciones como años bisiestos, zonas horarias y desbordamientos. Dos importantes eventos de desbordamiento ocurrirán en los años 2038 y 2042, conocidos comúnmente como Y2038 y Y2042, respectivamente. Estos eventos, que están a 14 y 18 años de distancia, pueden parecer lejanos, pero el tiempo pasa rápido y ocurrirán dentro de la mayoría de nuestras vidas. Muchas aplicaciones, como pólizas de seguros de vida, préstamos hipotecarios y programas gubernamentales de jubilación y seguro social, ya trascienden 2038/2042 y están activas hoy en día con millones de clientes. Es importante que los líderes empresariales estén conscientes de estos eventos, ya que representan un riesgo serio para sus negocios, pero pueden ser abordados con una planificación adecuada.</p>
+            <img src="/img/collage.jpg" alt="collage 2038" class="img-detalle">
             <p>Los eventos Y2038 y Y2042 tendrán un impacto significativo en muchos sistemas y productos empresariales, y plantean riesgos reales y consecuencias graves si no se abordan, potencialmente llevando a muchas empresas a la quiebra. A medida que los medios de comunicación globales descubran que 2038 y 2042 no son mitos, los clientes se preocuparán mucho por sus contratos y pólizas, lo cual representa un riesgo importante para cualquier organización que tenga aplicaciones de mediano a largo plazo que incluyan acuerdos comerciales legales, procedimientos y políticas que finalizan después de 2038 o 2042.</p>
+            <p>Aquí podemos ver un buen video que habla de manera bastante extendida (y entretenida) del tema: </p>
+
+            <div class="video-1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/laUukHVZC9c" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
             <p>Para garantizar la continuidad del negocio más allá de Y2038 y Y2042, es necesario identificar y abordar los problemas causados por estos eventos. Si bien algunos problemas pueden posponerse por un tiempo, con el tiempo, la magnitud de los problemas solo aumentará, volviéndose cada vez más difíciles, costosos y consumidores de tiempo de abordar. Tomar acciones simples ahora puede ayudar a lograr y mantener el cumplimiento. Identificar y corregir cualquier problema temprano proporcionará tranquilidad a usted y a sus partes interesadas, y una ventaja competitiva sobre las empresas que posponen la acción.</p>
+            <p>Haciendo click <a href="https://y2038.com/y2038_y2042_risks_and_actions/" class="link-text">aquí</a> podreis encontrar el articulo original.</p>
         </div>
 
-        <div>
-            
+        <div class="text">
+            <h2>Más información</h2>
+            <p>Para obtener más información sobre temas específicos relacionados con el fallo del año 2038, te invitamos a explorar recursos adicionales disponibles en línea.</p>
+            <div>
+                <ul>
+                    <li><a href="https://y2038.com/" class="link-text-2" target="_blank">Artículos Científicos</a><p>Página que parece ser oficial, sobre solución de problemas y artículos sobre el y2038.</p></li>
+                    <li><a href="https://ltbatis.medium.com/the-2038-problem-a-ticking-time-bomb-in-embedded-systems-5119c7720285" class="link-text-2" target="_blank">Revista online - Medium</a><p>Buen artículo sobre el y2038.</p></li>
+                    <li><a href="https://www.codereliant.io/the-2038-problem/" class="link-text-2" target="_blank">Impacto y2038 - Code Reliant</a><p>Buena explicación del posible impacto del y2038.</p></li>
+                </ul>
+            </div>
         </div>
     </main>
 

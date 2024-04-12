@@ -13,8 +13,7 @@
              <ul>
                  <li><a href="/index.html">Inicio</a></li>
                  <li><a href="/pages/presentacion.html">Que es?</a></li>
-                 <li><a href="/pages/general.html">Antecedentes</a></li>
-                 <li><a href="/pages/detalle.html">Artículo</a></li>
+                 <li><a href="/pages/categoria.html">Curiosidades</a></li>
                  <li><a href="/pages/enlaces.html">Enlaces</a></li>
              </ul>
          </nav>  
@@ -23,20 +22,38 @@
 
 
 
+    <button id="btnBack"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #000; transform: ; msFilter:"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg></button>
+
 
     <main>
-        <div>
-            <h1>Dispositivos afectados</h1>
+        <div class="h1-general">
+            <h1>Resumen del artículo "Y2038-Y2042 Risks & Actions"</h1>
         </div>
 
-        <div>
-            <p>El problema hacía que los dispositivos Android se bloquearan y no reiniciaran cuando se establecía la fecha límite.17​ Para comprobar esto se puede ir a la configuración de fecha y hora en el dispositivo, y al tratar de cambiar la fecha y hora al 2038; se encontrará con la sorpresa de que solo le permite cambiarlo hasta el 31 de diciembre de 2037. En la versión 4.0.4 se agregó esta característica, en las versiones anteriores, el calendario mostraba fechas hasta 2104, pero al seleccionar una fecha más adelantada a la fecha límite, el calendario volvía a la fecha actual. El selector de fechas mostraba correctamente los años a simple vista, pero al poner un dedo sobre alguna fecha no contable, este marcaba su negativa, es decir, el 19 de enero de 2040 por ejemplo, a simple vista se veía correcto, pero el sistema marcaba 13 de diciembre de 1903, ya que al reiniciarse, la primera fecha mostrable es 13 de diciembre de 1901. Un dato curioso es que de esta forma el sistema no se tildaba ni reiniciaba, la única manera era dejando que el contador llegara al límite por sí mismo</p>
-            <p>En los dispositivos iOS el sistema permite cambiar la fecha hasta el 1 de enero de 2038; sin embargo, desde el iPhone 5s en adelante se solucionaría, ya que estos modelos recientes de iPhone poseen un procesador de 64 bits que lo deja fuera de este problema. Igualmente Android ya está disponible en variantes de 64 bits desde la versión 5.0 por lo que gradualmente dejará atrás este problema. Los dispositivos con Android de 32 bits, Ubuntu Phone, Ubuntu Touch o Firefox OS llegan hasta el 31 de diciembre de 2037. Los dispositivos con Windows Phone 7 permiten llegar hasta el 1 de enero de 2040. Los dispositivos Windows Phone 8 no están afectados, y cuentan fechas desde el año 1601 hasta el 3000, concretamente el 1 de enero, al llegar a las 23:59, el contador regresa 24 horas y vuelve a marcar las 00:00 01/01/3000.</p>
-            <p>Concretamente, el problema afecta a los programas que usan la representación del tiempo basada en el sistema POSIX, que es el explicado en el párrafo anterior. Es la representación estándar en los sistemas tipo Unix y en todos los programas escritos en el lenguaje de programación C. La mayoría del software actual cae dentro de ese grupo y fallarán, dependiendo de como estén implementados, como si estuviesen funcionando en 1901 o 1970, en vez de en 2038. A pesar de ser un problema bien conocido (los programadores conocen esta limitación desde la implementación misma del lenguaje C), no existe una forma sencilla de solucionar este problema. Podría cambiarse el tipo de variable empleado por un entero de 32 bits sin signo, pero esto haría que todos los programas que hacen cálculos con diferencias de tiempo fallen. Y reescribir por completo esas aplicaciones es un trabajo enorme que solo puede evitarse migrando a los 64 bits.</p>
-        </div>
+        <div class="text">
+            <p>La lógica de fecha y hora es omnipresente en la mayoría de las aplicaciones de software, pero esta lógica es inherentemente compleja y propensa a errores debido a condiciones como años bisiestos, zonas horarias y desbordamientos. Dos importantes eventos de desbordamiento ocurrirán en los años 2038 y 2042, conocidos comúnmente como Y2038 y Y2042, respectivamente. Estos eventos, que están a 14 y 18 años de distancia, pueden parecer lejanos, pero el tiempo pasa rápido y ocurrirán dentro de la mayoría de nuestras vidas. Muchas aplicaciones, como pólizas de seguros de vida, préstamos hipotecarios y programas gubernamentales de jubilación y seguro social, ya trascienden 2038/2042 y están activas hoy en día con millones de clientes. Es importante que los líderes empresariales estén conscientes de estos eventos, ya que representan un riesgo serio para sus negocios, pero pueden ser abordados con una planificación adecuada.</p>
+            <img src="/collage.de431c59.jpg" alt="collage 2038" class="img-detalle">
+            <p>Los eventos Y2038 y Y2042 tendrán un impacto significativo en muchos sistemas y productos empresariales, y plantean riesgos reales y consecuencias graves si no se abordan, potencialmente llevando a muchas empresas a la quiebra. A medida que los medios de comunicación globales descubran que 2038 y 2042 no son mitos, los clientes se preocuparán mucho por sus contratos y pólizas, lo cual representa un riesgo importante para cualquier organización que tenga aplicaciones de mediano a largo plazo que incluyan acuerdos comerciales legales, procedimientos y políticas que finalizan después de 2038 o 2042.</p>
+            <p>Aquí podemos ver un buen video que habla de manera bastante extendida (y entretenida) del tema: </p>
 
-        <div>
+            <div class="video-1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/laUukHVZC9c" frameborder="0" allowfullscreen=""></iframe>
+            </div>
             
+            <p>Para garantizar la continuidad del negocio más allá de Y2038 y Y2042, es necesario identificar y abordar los problemas causados por estos eventos. Si bien algunos problemas pueden posponerse por un tiempo, con el tiempo, la magnitud de los problemas solo aumentará, volviéndose cada vez más difíciles, costosos y consumidores de tiempo de abordar. Tomar acciones simples ahora puede ayudar a lograr y mantener el cumplimiento. Identificar y corregir cualquier problema temprano proporcionará tranquilidad a usted y a sus partes interesadas, y una ventaja competitiva sobre las empresas que posponen la acción.</p>
+            <p>Haciendo click <a href="https://y2038.com/y2038_y2042_risks_and_actions/" class="link-text">aquí</a> podreis encontrar el articulo original.</p>
+        </div>
+
+        <div class="text">
+            <h2>Más información</h2>
+            <p>Para obtener más información sobre temas específicos relacionados con el fallo del año 2038, te invitamos a explorar recursos adicionales disponibles en línea.</p>
+            <div>
+                <ul>
+                    <li><a href="https://y2038.com/" class="link-text-2" target="_blank">Artículos Científicos</a><p>Página que parece ser oficial, sobre solución de problemas y artículos sobre el y2038.</p></li>
+                    <li><a href="https://ltbatis.medium.com/the-2038-problem-a-ticking-time-bomb-in-embedded-systems-5119c7720285" class="link-text-2" target="_blank">Revista online - Medium</a><p>Buen artículo sobre el y2038.</p></li>
+                    <li><a href="https://www.codereliant.io/the-2038-problem/" class="link-text-2" target="_blank">Impacto y2038 - Code Reliant</a><p>Buena explicación del posible impacto del y2038.</p></li>
+                </ul>
+            </div>
         </div>
     </main>
 
