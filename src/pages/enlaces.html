@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enlaces</title>
     <link rel="stylesheet" href="/src/style.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <include src="./src/components/header.html"></include>
@@ -22,19 +23,28 @@
         </div>
 
         <div class="text">
-            <ol>
-                <li>jj</li>
-                <li>bbb</li>
-                <li>ccc</li>
-                <li>ddd</li>
-                <li>eee</li>
+            <ol class="lista-ordenada">
+                <li><a href="https://y2038.com/">Página ¿Oficial? del fenómeno year 2038</a></li>
+                <li><a href="https://twitter.com/midudev/status/1765742885612249346">Hilo de Twitter que causó que la página tenga esta temática. Imagen del collage utilizada.</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Problema_del_a%C3%B1o_2038">Wikipedia - 2038</a></li>
+                <li><a href="https://konstantinmb.medium.com/the-unix-timestamp-ticking-time-bomb-navigating-the-2038-challenge-99879dca47a1">Artículo de Medium</a></li>
+                <li><a href="https://www.codereliant.io/the-2038-problem/">Artículo de Code Reliant</a></li>
+                <li><a href="https://theyear2038problem.com/">Artículo de The year 2038 problem</a></li>
+                <li><a href="https://www.xataka.com/seguridad/que-es-el-efecto-2038-a-que-dispositivos-afecta-y-que-peligro-real-puede-suponer">Artículo Xataka</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Unix">Wikipedia - UNIX</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/POSIX">Wikipedia - POSIX</a></li>
+                <li><a href="https://www.linkedin.com/pulse/looming-2038-problem-mysql-prepared-unix-time-overflow-sachin-duhan/">Artículo LinkedIn - MySQL y el 2038</a></li>
             </ol>
+        </div>
+
+        <div>
+            <img src="/img/mouse.jpg" alt="mouse pad" class="img-enlaces">
         </div>
  
     </main>
 
-    <footer>
-
-    </footer>
+    <include src="./src/components/footer.html"></include>
+    
+    <script src="/src/main.js"></script>
 </body>
 </html>

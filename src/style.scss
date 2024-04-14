@@ -6,6 +6,7 @@ $secundary-color: #E0E0E2;
 $third-color: #FFB20F;
 $fourth-color: #000;
 $fifth-color: #247BA0;
+$footer-color: #1F1F1F;
 
 /* colores contador */
 $dark-color-1: #151515;
@@ -62,10 +63,6 @@ p {
       1px 8px 1px $fifth-color,
       1px 9px 1px $fifth-color,
       1px 10px 1px $fifth-color,
-  1px 18px 6px rgba(16,16,16,0.4),
-  1px 22px 10px rgba(16,16,16,0.2),
-  1px 25px 35px rgba(16,16,16,0.2),
-  1px 30px 60px rgba(16,16,16,0.4);
 }
 
 .h1-index:hover {
@@ -79,10 +76,6 @@ p {
       1px 8px 1px $third-color,
       1px 9px 1px $third-color,
       1px 10px 1px $third-color,
-  1px 18px 6px rgba(16,16,16,0.4),
-  1px 22px 10px rgba(16,16,16,0.2),
-  1px 25px 35px rgba(16,16,16,0.2),
-  1px 30px 60px rgba(16,16,16,0.4);
 }
 
 .title {
@@ -104,12 +97,17 @@ p {
   padding: 2rem 7rem 1rem 7rem;
 }
 
-.img-presentacion {
+.img-presentacion,
+.img-enlaces {
   display: block;
   margin: 0 auto;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   border-radius: 10px;
+}
+
+.img-enlaces {
+  width: 20%;
 }
 
 .img-detalle {
@@ -129,8 +127,52 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.lista-ordenada li {
+  line-height: 2;
+}
 
-/* ///////////////// back ////////////////*/
+.lista-ordenada li a {
+  text-decoration: none;
+  color: $secundary-color;
+}
+
+.lista-ordenada li a:hover {
+  text-decoration: underline;
+  color: $third-color;
+}
+
+/* ---------------- Footer ------------- */
+
+footer {
+  background-color: $footer-color;
+  padding: 10px 30px 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+.github-icon:hover i {
+  transform: scale(1.1); 
+}
+.left-side {
+  text-align: left;
+}
+
+.right-side {
+  text-align: right;
+}
+
+.github-icon {
+  font-size: 2rem;
+
+}
+
+
+/* ---------------- Botón Atrás --------------*/
 
 #btnBack {
 
@@ -142,7 +184,7 @@ p {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 10px;
+  margin: 30px;
   cursor: pointer;
   border-radius: 10px;
 }
@@ -208,6 +250,8 @@ ul li a {
   text-decoration: none;
   color: $secundary-color;
 }
+
+/* ---------------------- */
 
 .h1-general {
   justify-content: center;

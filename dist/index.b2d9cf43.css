@@ -25,7 +25,7 @@ p {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: #000;
-  text-shadow: 1px 1px 1px #247ba0, 1px 2px 1px #247ba0, 1px 3px 1px #247ba0, 1px 4px 1px #247ba0, 1px 5px 1px #247ba0, 1px 6px 1px #247ba0, 1px 7px 1px #247ba0, 1px 8px 1px #247ba0, 1px 9px 1px #247ba0, 1px 10px 1px #247ba0, 1px 18px 6px #10101066, 1px 22px 10px #10101033, 1px 25px 35px #10101033, 1px 30px 60px #10101066;
+  text-shadow: 1px 1px 1px #247ba0, 1px 2px 1px #247ba0, 1px 3px 1px #247ba0, 1px 4px 1px #247ba0, 1px 5px 1px #247ba0, 1px 6px 1px #247ba0, 1px 7px 1px #247ba0, 1px 8px 1px #247ba0, 1px 9px 1px #247ba0, 1px 10px 1px #247ba0;
   background-clip: text;
   margin: 0;
   padding: 0;
@@ -36,7 +36,7 @@ p {
 }
 
 .h1-index:hover {
-  text-shadow: 1px 1px 1px #ffb20f, 1px 2px 1px #ffb20f, 1px 3px 1px #ffb20f, 1px 4px 1px #ffb20f, 1px 5px 1px #ffb20f, 1px 6px 1px #ffb20f, 1px 7px 1px #ffb20f, 1px 8px 1px #ffb20f, 1px 9px 1px #ffb20f, 1px 10px 1px #ffb20f, 1px 18px 6px #10101066, 1px 22px 10px #10101033, 1px 25px 35px #10101033, 1px 30px 60px #10101066;
+  text-shadow: 1px 1px 1px #ffb20f, 1px 2px 1px #ffb20f, 1px 3px 1px #ffb20f, 1px 4px 1px #ffb20f, 1px 5px 1px #ffb20f, 1px 6px 1px #ffb20f, 1px 7px 1px #ffb20f, 1px 8px 1px #ffb20f, 1px 9px 1px #ffb20f, 1px 10px 1px #ffb20f;
 }
 
 .title {
@@ -58,10 +58,14 @@ p {
   padding: 2rem 7rem 1rem;
 }
 
-.img-presentacion {
+.img-presentacion, .img-enlaces {
   border-radius: 10px;
   margin: 1.5rem auto 2rem;
   display: block;
+}
+
+.img-enlaces {
+  width: 20%;
 }
 
 .img-detalle {
@@ -77,6 +81,48 @@ p {
   margin: 1.5rem auto;
 }
 
+.lista-ordenada li {
+  line-height: 2;
+}
+
+.lista-ordenada li a {
+  color: #e0e0e2;
+  text-decoration: none;
+}
+
+.lista-ordenada li a:hover {
+  color: #ffb20f;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #1f1f1f;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  display: flex;
+}
+
+footer p {
+  font-size: .9rem;
+}
+
+.github-icon:hover i {
+  transform: scale(1.1);
+}
+
+.left-side {
+  text-align: left;
+}
+
+.right-side {
+  text-align: right;
+}
+
+.github-icon {
+  font-size: 2rem;
+}
+
 #btnBack {
   color: #000;
   text-align: center;
@@ -84,7 +130,7 @@ p {
   border: none;
   border-radius: 10px;
   justify-content: center;
-  margin: 10px;
+  margin: 30px;
   padding: 5px;
   font-size: 16px;
   text-decoration: none;
