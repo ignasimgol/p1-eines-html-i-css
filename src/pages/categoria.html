@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curiosidades</title> 
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/style.scss">
     
 </head>
 <body>
@@ -17,68 +17,72 @@
             <h1>Curiosidades</h1>
         </div>
 
-        <div class="ant-container">
-            <div class="ant-1">
-                <div>
-                    <img src="/img/2038 year.jpg" alt="year 2038">
+        <div class="container">
+            
+                <div class="ant-1">
+                    <div>
+                        <img src="/img/2038-green.jpg" alt="year 2038">
+                    </div>
+                    <div>
+                        <h2>Resumen del artículo "Y2038-Y2042 Risks & Actions"</h2>
+                        <p>La lógica de fecha y hora es omnipresente en la mayoría de las aplicaciones de software, pero esta lógica es inherentemente compleja y <b>propensa a errores debido a condiciones como años bisiestos, zonas horarias y desbordamientos</b>. Dos importantes eventos de desbordamiento ocurrirán en los años 2038 y 2042, conocidos comúnmente como Y2038 y Y2042...</p>
+                        <a href="/src/pages/detalle.html" class="link-text">Leer más ➡️</a>
+                    </div>
                 </div>
-                <div>
-                    <h2>Resumen del artículo "Y2038-Y2042 Risks & Actions"</h2>
-                    <p>La lógica de fecha y hora es omnipresente en la mayoría de las aplicaciones de software, pero esta lógica es inherentemente compleja y propensa a errores debido a condiciones como años bisiestos, zonas horarias y desbordamientos. Dos importantes eventos de desbordamiento ocurrirán en los años 2038 y 2042, conocidos comúnmente como Y2038 y Y2042...</p>
-                    <a href="/src/pages/detalle.html" class="link-text">Leer más ➡️</a>
+    
+                <div class="ant-1">
+                    <div>
+                        <img src="/img/posix.jpg" alt="posix">
+                    </div>
+                    <div>
+                        <h2>Qué es POSIX?</h2>
+                        <p>POSIX (acrónimo de Portable Operating System Interface, y X viene de UNIX como seña de identidad de la API) es una norma escrita por la IEEE, que define una interfaz estándar del sistema operativo y el entorno, incluyendo un intérprete de comandos (o "shell"). El estándar POSIX es un conjunto de normas para los sistemas operativos tipo Unix. <b>Su propósito es asegurar la compatibilidad y portabilidad del software entre diferentes sistemas operativos Unix.</b> Dicha norma define una interfaz estándar del sistema operativo y el entorno, incluyendo un intérprete de comandos (o "shell"), y programas de utilidades comunes para apoyar la portabilidad de las aplicaciones a nivel de código fuente. Este modelo es abierto, acepta entradas de todo el mundo y está libremente disponible en Internet.</p>
+                    </div>
                 </div>
-            </div>
+    
+                <div class="ant-1">
+                    <div>
+                        <img src="/img/AVION.jpg" alt="boeing 787">
+                    </div>
+                    <div>
+                        <h2>El caso del Boeing 787</h2>
+                        <p>El Boeing 787 presenta una falla de software que <b>obliga a apagar cada cierto tiempo —y por completo— los sistemas eléctricos</b> a fin de prevenir entrar en modo de fallo, lo que ocasionaría el apagado de los motores en vuelo. La remota posibilidad ocurre en un software contador de centésimas de segundos que se desborda después de poco más de 248 días de funcionamiento continuo (248x24 horas x3600 segundos x100 = 2 142 720 000).La Administración Federal de Aviación (FAA) consideró menos peligroso y económico el implementar una directiva de aeronavegabilidad contra sustituir el software de todos los aviones a nivel mundial.</p>
+                    </div>
+                </div>
+    
+                <div class="ant-1">
+                    <div>
+                        <img src="/img/hwlett.jpg" alt="">
+                    </div>
+                    <div>
+                        <h2>Hewlett Packard Enterprise</h2>
+                        <p>Algunos modelos de unidades de estado sólido vendidos por la empresa Hewlett Packard Enterprise fueron implementados con un contador de horas mientras está encendido. Dicho valor se guardaba en una variable de 2 bytes con signo por lo que al alcanzar las 32 768 horas de uso (215) los datos almacenados solo pudieron ser recuperados mediante una actualización de firmware.</p>
+                    </div>
+                </div>
+    
+                <div class="ant-1">
+                    <div>
+                        <img src="/img/sonda.jpg" alt="sonda espacial">
+                    </div>
+                    <div>
+                        <h2>La sonda espacial Deep Impact</h2>
+                        <p>El 8 de agosto de 2013 la sonda espacial Deep Impact tuvo una falla en el conteo del tiempo, lo que <b>ocasionó la mala orientación de sus paneles solares</b> quedando así sin suministro eléctrico para comunicarse y <b>condujo a la finalización de la misión.</b> En este caso el conteo se llevaba a cabo por décimas de segundo en una variable de 32 bits sin signo: 232=4 294 967 296; si sumamos 4 294 967 296 décimas de segundo a la fecha 1 de enero de 2000 resulta 11 de agosto de 2013 12:38:49 AM, teniendo en cuenta, además, el fenómeno de la dilatación del tiempo.</p>
+                    </div>
+                </div>
+    
+                <div class="ant-1">
+                    <div>
+                        <img src="/img/20382.jpg" alt="">
+                    </div>
+                    <div>
+                        <h2>Sistema de Posicionamiento Global</h2>
+                        <p>De manera similar algunos dispositivos de Sistema de Posicionamiento Global llevan cuenta del tiempo por semanas en un campo de 10 bits (a partir del 6 de enero de 1980), permitiendo un máximo de 1024 semanas (210). El primer reinicio ocurrió el 21 de agosto de 1999 (en inglés: GPS Time Epoch), y el segundo el 6 de abril de 2019, abriendo la posibilidad de que algunos artefactos tomen como fecha errónea el 5 de enero de 1980. Esto, básicamente, es el mismo problema de desborde de memoria numérica para el año 2038.</p>
+                    </div>
+                </div>
+           
 
-            <div class="ant-1">
-                <div>
-                    <img src="/img/posix.jpg" alt="posix">
-                </div>
-                <div>
-                    <h2>Qué es POSIX?</h2>
-                    <p>POSIX (acrónimo de Portable Operating System Interface, y X viene de UNIX como seña de identidad de la API) es una norma escrita por la IEEE, que define una interfaz estándar del sistema operativo y el entorno, incluyendo un intérprete de comandos (o "shell"). El estándar POSIX es un conjunto de normas para los sistemas operativos tipo Unix. <b>Su propósito es asegurar la compatibilidad y portabilidad del software entre diferentes sistemas operativos Unix.</b> Dicha norma define una interfaz estándar del sistema operativo y el entorno, incluyendo un intérprete de comandos (o "shell"), y programas de utilidades comunes para apoyar la portabilidad de las aplicaciones a nivel de código fuente. Este modelo es abierto, acepta entradas de todo el mundo y está libremente disponible en Internet.</p>
-                </div>
-            </div>
-
-            <div class="ant-2">
-                <div>
-                    <img src="/img/AVION.jpg" alt="boeing 787">
-                </div>
-                <div>
-                    <h2>El caso del Boeing 787</h2>
-                    <p>El Boeing 787 presenta una falla de software que <b>obliga a apagar cada cierto tiempo —y por completo— los sistemas eléctricos</b> a fin de prevenir entrar en modo de fallo, lo que ocasionaría el apagado de los motores en vuelo. La remota posibilidad ocurre en un software contador de centésimas de segundos que se desborda después de poco más de 248 días de funcionamiento continuo (248x24 horas x3600 segundos x100 = 2 142 720 000).La Administración Federal de Aviación (FAA) consideró menos peligroso y económico el implementar una directiva de aeronavegabilidad contra sustituir el software de todos los aviones a nivel mundial.</p>
-                </div>
-            </div>
-
-            <div class="ant-3">
-                <div>
-                    <img src="/img/hwlett.jpg" alt="">
-                </div>
-                <div>
-                    <h2>Hewlett Packard Enterprise</h2>
-                    <p>Algunos modelos de unidades de estado sólido vendidos por la empresa Hewlett Packard Enterprise fueron implementados con un contador de horas mientras está encendido. Dicho valor se guardaba en una variable de 2 bytes con signo por lo que al alcanzar las 32 768 horas de uso (215) los datos almacenados solo pudieron ser recuperados mediante una actualización de firmware.</p>
-                </div>
-            </div>
-
-            <div class="ant-4">
-                <div>
-                    <img src="/img/sonda.jpg" alt="sonda espacial">
-                </div>
-                <div>
-                    <h2>La sonda espacial Deep Impact</h2>
-                    <p>El 8 de agosto de 2013 la sonda espacial Deep Impact tuvo una falla en el conteo del tiempo, lo que <b>ocasionó la mala orientación de sus paneles solares</b> quedando así sin suministro eléctrico para comunicarse y <b>condujo a la finalización de la misión.</b> En este caso el conteo se llevaba a cabo por décimas de segundo en una variable de 32 bits sin signo: 232=4 294 967 296; si sumamos 4 294 967 296 décimas de segundo a la fecha 1 de enero de 2000 resulta 11 de agosto de 2013 12:38:49 AM, teniendo en cuenta, además, el fenómeno de la dilatación del tiempo.</p>
-                </div>
-            </div>
-
-            <div class="ant-4">
-                <div>
-                    <img src="/img/20382.jpg" alt="">
-                </div>
-                <div>
-                    <h2>Sistema de Posicionamiento Global</h2>
-                    <p>De manera similar algunos dispositivos de Sistema de Posicionamiento Global llevan cuenta del tiempo por semanas en un campo de 10 bits (a partir del 6 de enero de 1980), permitiendo un máximo de 1024 semanas (210). El primer reinicio ocurrió el 21 de agosto de 1999 (en inglés: GPS Time Epoch), y el segundo el 6 de abril de 2019, abriendo la posibilidad de que algunos artefactos tomen como fecha errónea el 5 de enero de 1980. Esto, básicamente, es el mismo problema de desborde de memoria numérica para el año 2038.</p>
-                </div>
-            </div>
         </div>
+       
 
     </main>
 
