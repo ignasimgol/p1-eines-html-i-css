@@ -106,12 +106,16 @@ p {
   padding: 2rem 7rem 1rem 7rem;
 }
 
+
+
 .img-presentacion {
   display: block;
   margin: 0 auto;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   border-radius: 10px;
+  width: 70%;
+  height: auto;
 }
 
 .img-enlaces {
@@ -139,6 +143,17 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.video-1 iframe {
+  width: 560px;
+  height: 315px;
+}
+
+@media screen and (max-width: 750px) {
+  .video-1 iframe {
+    width: 320px;
+    height: 190px;
+  }
+}
 .lista-ordenada li {
   line-height: 2;
 }
