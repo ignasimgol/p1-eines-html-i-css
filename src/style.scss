@@ -15,7 +15,6 @@ $dark-color-3: #333333;
 $dark-color-4: #202020;
 
 
-
 body {
   color: $secundary-color;
   background-color: $primary-color;
@@ -30,6 +29,16 @@ b {
 
 p {
   font-size: 1.1rem;
+}
+
+.index-main-part {
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .index-main-part {
+    margin-top: 5rem;
+  }
 }
 
 .h1-index a {
@@ -97,8 +106,7 @@ p {
   padding: 2rem 7rem 1rem 7rem;
 }
 
-.img-presentacion,
-.img-enlaces {
+.img-presentacion {
   display: block;
   margin: 0 auto;
   margin-top: 1.5rem;
@@ -107,7 +115,11 @@ p {
 }
 
 .img-enlaces {
-  width: 20%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  margin-bottom: 10rem;
+  border-radius: 10px;
 }
 
 .img-detalle {
@@ -141,6 +153,8 @@ p {
   color: $third-color;
 }
 
+
+
 /* ---------------- Footer ------------- */
 
 footer {
@@ -158,6 +172,7 @@ footer p {
 .github-icon:hover i {
   transform: scale(1.1); 
 }
+
 .left-side {
   text-align: left;
 }
@@ -168,7 +183,6 @@ footer p {
 
 .github-icon {
   font-size: 2rem;
-
 }
 
 
@@ -251,6 +265,73 @@ ul li a {
   color: $secundary-color;
 }
 
+
+/* Hamburger menu */
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .abrir-menu,
+  .cerrar-menu {
+      display: block;
+      border: 0;
+      font-size: 2rem;
+      background-color: transparent;
+      cursor: pointer;
+  }
+
+  .abrir-menu {
+      color: $secundary-color;
+      position: fixed;
+      top: 20px; 
+      right: 20px; 
+  }
+
+  .cerrar-menu {
+      color: $secundary-color;
+  }
+
+  .nav {
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $footer-color;
+      padding: 2rem;
+      
+  }
+
+  .nav.visible {
+      opacity: 1;
+      visibility: visible;
+  }
+  
+  .nav-list {
+      flex-direction: column;
+      align-items: end;
+  }
+
+  .nav-list li a {
+      color: $secundary-color;
+  }
+
+  nav ul li a{
+    font-size: 1rem;
+    text-decoration: none;
+    border: none;
+  }
+}
+
 /* ---------------------- */
 
 .h1-general {
@@ -331,19 +412,15 @@ ul li p {
   color: $third-color;
 }
 
-
-
 p {
   margin-top: 10px;
 }
 
 
 
-/* Hamburger menu */
 
 
-
-/*  CONTADOR  */
+/* //// CONTADOR ///// */
 
 /* Font styles */
 .flipdown.flipdown__theme-dark {
@@ -558,12 +635,12 @@ p {
 @media (max-width: 550px) {
 
   .flipdown {
-    width: 312px;
+    width: 390px;
     height: 70px;
   }
 
   .flipdown .rotor {
-    font-size: 2.2rem;
+    font-size: 1.3rem;
     margin-right: 3px;
   }
 
