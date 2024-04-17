@@ -13,30 +13,31 @@ cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
 })
 
-// contador
+// Contador
 const fechaObjetivo = new Date('2038-01-19T03:14:07Z').getTime();
 
 // Actualiza el contador cada segundo
 const intervalo = setInterval(() => {
   // Obtén la fecha y hora actual en milisegundos
   const ahora = new Date().getTime();
-  
-  // Calcula la diferencia entre la fecha objetivo y la fecha actual
+
   const diferencia = fechaObjetivo - ahora;
   
-  // Calcula los días, horas, minutos y segundos restantes
+
   const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
   const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
   const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
   
-  // Muestra el contador en el elemento HTML
-  document.getElementById('contador').innerHTML = `Faltan ${dias} días, ${horas} horas, ${minutos} minutos y ${segundos} segundos`;
-  
-  // Si la fecha objetivo ha pasado, detén el contador
+
+  document.getElementById('dias').innerHTML = `${dias} días`;
+  document.getElementById('horas').innerHTML = `${horas} horas`;
+  document.getElementById('minutos').innerHTML = `${minutos} minutos`;
+  document.getElementById('segundos').innerHTML = `${segundos} segundos`;
+
   if (diferencia < 0) {
     clearInterval(intervalo);
-    document.getElementById('contador').innerHTML = '¡Ya pasó la fecha objetivo!';
+    document.getElementById('contador').innerHTML = 'TIME IS OVER';
   }
 }, 1000); // Se ejecuta cada segundo
 
