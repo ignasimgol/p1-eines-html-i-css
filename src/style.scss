@@ -466,6 +466,12 @@ ul li a {
   margin-bottom: 1.5rem;
 }
 
+@media only screen and (max-width: 550px) {
+  .link-text-2 {
+    font-size: 0.9rem;
+  }
+}
+
 .text ul li {
   list-style: circle;
 }
