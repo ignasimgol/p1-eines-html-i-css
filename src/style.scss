@@ -1,4 +1,4 @@
-/* colors _ https://coolors.co/292929-e0e0e2-63a46c-247ba0-ffb20f */
+/* Paleta colores  https://coolors.co/292929-e0e0e2-63a46c-247ba0-ffb20f */
 
 /* colores pagina */
 $primary-color: #292929;
@@ -129,6 +129,10 @@ p {
       1px 8px 1px $third-color,
       1px 9px 1px $third-color,
       1px 10px 1px $third-color,
+}
+
+.h2-presentacion {
+  margin-top: 4rem;
 }
 
 .title {
@@ -278,7 +282,7 @@ footer p {
 
 
 
-/* ///////////////// MENU ////////////////*/
+/* ------------ MENU ------------*/
 
 nav ul {
   list-style: none;
@@ -332,7 +336,7 @@ ul li a {
 }
 
 
-/* Hamburger menu */
+/*---------- Hamburger menu ----------*/
 
 .abrir-menu,
 .cerrar-menu {
@@ -474,6 +478,14 @@ ul li a {
 
 .text ul li {
   list-style: circle;
+}
+
+.text a {
+  text-decoration: none;
+}
+
+.text a:hover {
+  color: $third-color;
 }
 
 ul li p {
