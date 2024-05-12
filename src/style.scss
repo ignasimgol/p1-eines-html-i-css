@@ -251,6 +251,53 @@ footer p {
   text-align: left;
 }
 
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Opcional: centra el contenido verticalmente */
+  text-align: center; /* Centra el texto dentro del div */
+}
+
+.middle .nav-list {
+  padding: 0;
+}
+
+.middle li {
+  display: inline-block;
+}
+
+.middle li:nth-child(1):after,
+.middle li:nth-child(4):after {
+  content: " |";
+}
+
+@media only screen and (max-width: 900px) {
+  .middle {
+    font-size: 0.8rem;
+  }
+  .middle img {
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .middle {
+    display: flex;
+    justify-content: center;
+  }
+  .middle li {
+    display: block;
+    font-size: 0.8rem; 
+    text-align: center;
+  }
+  .middle li:nth-child(1):after,
+  .middle li:nth-child(4):after {
+    content: "";
+  }
+}
+
+
+
 .right-side {
   text-align: right;
 }
