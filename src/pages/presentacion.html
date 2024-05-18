@@ -21,8 +21,27 @@
                 <p>Señoras y señores, con todos ustedes... Daft Punk!!! He querido relacionar el problema del año 2038 de una manera irónica, vinculándolo con Daft Punk, el reconocido dúo de música electrónica. La página busca explorar el contraste entre la preocupación técnica sobre el efecto del año 2038 en los sistemas informáticos, causada por la limitación de los relojes de UNIX de 32 bits, y la visión futurista y optimista que promueve Daft Punk en su música y estética y relacionar así música e informática.</p>
                 
                 <picture>
-                    <source srcset="/img/daft-punk-3.jpg?as=webp" type="image/webp">
-                    <img src="/img/daft-punk-3.jpg" alt="daft punk con cascos" class="img-presentacion">
+                    <source srcset="
+                            /img/daft-punk-3-small.jpg?as=avif 480w,
+                            /img/daft-punk-3-medium.jpg?as=avif 768w,
+                            /img/daft-punk-3.jpg?as=avif 1200w"
+                            sizes="
+                            (max-width: 480px) 100px,
+                            (max-width: 768px) 200x,
+                            300px"
+                            type="image/avif">
+
+                    <img srcset="
+                            /img/daft-punk-3-small.jpg 480w,
+                            /img/daft-punk-3-medium.jpg 768w,
+                            /img/daft-punk-3.jpg 1200w"
+                            sizes="
+                            (max-width: 480px) 100px,
+                            (max-width: 768px) 200px,
+                            300px"
+                            src="/img/daft-punk-3.jpg"
+                            class="img-presentacion"
+                            alt="daft-punk-3">
                 </picture>
                 
                 <p>Además, este grupo tiene relació directa con el problema de 2038. Tubieron un accidente que ocurrió el 9 del 9 de 1999, cuando Daft Punk sufrió el "error 9999", un fallo de código similar al Efecto 2000 que echó a perder las creaciones musicales del grupo francés.</p>
@@ -42,8 +61,27 @@
                 <p>En informática, el problema del año 2038 (conocido también por el numerónimo Y2K38) podría causar que una parte del software mudial falle en ese año. El problema afecta a los programas que usen la representación del tiempo basada en el <b>sistema POSIX (Tiempo Unix)</b>, que se basa en contar el número de segundos transcurridos desde la noche del 1 de enero de 1970 a las 00:00:00 (ignorando los segundos intercalares)</p>
                 
                 <picture>
-                    <source srcset="/img/2038.jpg?as=webp" type="image/webp">
-                    <img src="/img/2038.jpg" alt="unix meteorito" class="img-presentacion">
+                    <source srcset="
+                            /img/2038-small.jpg?as=avif 480w,
+                            /img/2038-medium.jpg?as=avif 768w,
+                            /img/2038.jpg?as=avif 1200w"
+                            sizes="
+                            (max-width: 480px) 100px,
+                            (max-width: 768px) 200x,
+                            300px"
+                            type="image/avif">
+
+                    <img srcset="
+                            /img/2038-small.jpg 480w,
+                            /img/2038-medium.jpg 768w,
+                            /img/2038.jpg 1200w"
+                            sizes="
+                            (max-width: 480px) 100px,
+                            (max-width: 768px) 200px,
+                            300px"
+                            src="/img/2038.jpg"
+                            class="img-presentacion"
+                            alt="year 2038">
                 </picture>
                 
                 <p>Esta representación es un estándar de facto en los sistemas tipo Unix y también en los programas escritos para muchos otros sistemas operativos debido al gran alcance del lenguaje de programación en <b>el lenguaje C</b>. En la mayoría de <b>sistemas de 32 bits</b>, el tipo de dato time_t usado para guardar el contador de segundos es un entero de 32 bits con signo, es decir, que puede representar un rango de números entre -2.147.483.648 y 2.147.483.647 (-231 y 231-1; 1 bit para el signo, y 31 para representar su valor en complemento a dos), por lo que el último segundo representable con este formato será a las 03:14:07 UTC del 19 de enero de 2038, cuando el contador llegue a 2.147.483.647. Un segundo después, <b>el contador se desbordará y saltará al valor -2.147.483.648, que causará el fallo</b> de programas que interpretarán el tiempo como que están en 1901 (dependiendo de la implementación), en vez de en 2038. A su vez, esto causaría cálculo y procesamiento incorrecto y causaría un problema mundial.</p>
