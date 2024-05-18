@@ -44,7 +44,39 @@
 
       <div class="clip-container">
         <h2>Who are these guys?</h2>
-        <img src="/img/daft-punk-5.jpg" alt="Exemple d'Imatge" class="clip-animation">
+        <a href="/src/pages/presentacion.html">
+          <picture>
+              <source
+                  srcset="
+                      /img/daft-punk-5-small.jpg?as=webp 480w,
+                      /img/daft-punk-5-medium.jpg?as=webp 768w,
+                      /img/daft-punk-5.jpg?as=webp 1200w
+                  "
+                  sizes="
+                      (max-width: 480px) 480px,
+                      (max-width: 768px) 768px,
+                      1200px
+                  "
+                  type="image/webp"
+              >
+              <img
+                  srcset="
+                      /img/daft-punk-5-small.jpg 480w,
+                      /img/daft-punk-5-medium.jpg 768w,
+                      /img/daft-punk-5.jpg 1200w
+                  "
+                  sizes="
+                      (max-width: 480px) 480px,
+                      (max-width: 768px) 768px,
+                      1200px
+                  "
+                  src="/img/daft-punk-5.jpg"
+                  alt="Exemple d'Imatge"
+                  class="clip-animation"
+              >
+          </picture>
+
+        </a>
       </div>
 
     </main>
