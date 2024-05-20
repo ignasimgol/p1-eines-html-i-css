@@ -50,22 +50,12 @@
 
         <div>
             <picture>
-                <source media="(max-width: 480px)" srcset="
-                    /img/mouse-min-px.jpg 1x,
-                    /img/mouse-max-px.jpg 2x">
-            
-                <source media="(max-width: 768px)" srcset="
-                    /img/mouse-min-px.jpg 1x,
-                    /img/mouse-max-px.jpg 2x">
-            
-                <source media="(min-width: 769px)" srcset="
-                    /img/mouse.jpg 1x,
-                    /img/mouse-max-px.jpg 2x">
-                
-                <img src="/img/mouse.jpg" alt="mouse pad" class="img-enlaces">
+                <img src="/img/mouse.jpg" 
+                     srcset="/img/mouse-min-px.jpg 1x, /img/mouse-max-px.jpg 2x" 
+                     alt="mouse pad" 
+                     class="img-enlaces">
             </picture>
         </div>
- 
     </main>
 
     <include src="./src/components/footer.html"></include>

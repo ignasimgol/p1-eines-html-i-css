@@ -20,6 +20,9 @@ body {
   font-family: "Fira Code", monospace;
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 #contador-container {
@@ -564,12 +567,14 @@ p {
 
 .clip-animation img {
   transition: clip-path 1s;
-
 }
 
 .clip-animation {
   clip-path: polygon(
-    50% 0%, 60% 10%, 75% 0%, 90% 10%, 100% 50%, 90% 90%, 75% 100%, 60% 90%, 50% 100%, 40% 90%, 25% 100%, 10% 90%, 0% 50%, 10% 10%, 25% 0%, 40% 10%
+    50% 0%, 60% 10%, 75% 0%, 90% 10%,
+    100% 50%, 90% 90%, 75% 100%, 60% 90%, 
+    50% 100%, 40% 90%, 25% 100%, 10% 90%, 
+    0% 50%, 10% 10%, 25% 0%, 40% 10%
   );
   animation: clip 5s infinite;
 }
@@ -577,22 +582,34 @@ p {
 @keyframes clip {
   0%, 100% {
     clip-path: polygon(
-      50% 0%, 60% 10%, 75% 0%, 90% 10%, 100% 50%, 90% 90%, 75% 100%, 60% 90%, 50% 100%, 40% 90%, 25% 100%, 10% 90%, 0% 50%, 10% 10%, 25% 0%, 40% 10%
+      50% 0%, 60% 10%, 75% 0%, 90% 10%, 
+      100% 50%, 90% 90%, 75% 100%, 60% 90%, 
+      50% 100%, 40% 90%, 25% 100%, 10% 90%, 
+      0% 50%, 10% 10%, 25% 0%, 40% 10%
     );
   }
   25% {
     clip-path: polygon(
-      40% 0%, 55% 15%, 70% 5%, 85% 15%, 100% 50%, 85% 85%, 70% 95%, 55% 85%, 40% 100%, 25% 85%, 10% 95%, 5% 85%, 0% 50%, 5% 15%, 10% 5%, 25% 15%
+      40% 0%, 55% 15%, 70% 5%, 85% 15%, 
+      100% 50%, 85% 85%, 70% 95%, 55% 85%, 
+      40% 100%, 25% 85%, 10% 95%, 5% 85%,
+      0% 50%, 5% 15%, 10% 5%, 25% 15%
     );
   }
   50% {
     clip-path: polygon(
-      30% 5%, 50% 10%, 65% 0%, 80% 15%, 95% 50%, 80% 85%, 65% 100%, 50% 90%, 30% 95%, 15% 85%, 5% 90%, 0% 50%, 5% 10%, 15% 0%, 30% 10%, 45% 5%
+      30% 5%, 50% 10%, 65% 0%, 80% 15%, 
+      95% 50%, 80% 85%, 65% 100%, 50% 90%, 
+      30% 95%, 15% 85%, 5% 90%, 0% 50%, 
+      5% 10%, 15% 0%, 30% 10%, 45% 5%
     );
   }
   75% {
     clip-path: polygon(
-      35% 0%, 55% 5%, 70% 10%, 85% 5%, 100% 50%, 85% 95%, 70% 90%, 55% 95%, 35% 100%, 20% 85%, 10% 90%, 0% 50%, 10% 5%, 20% 0%, 35% 5%, 50% 0%
+      35% 0%, 55% 5%, 70% 10%, 85% 5%, 
+      100% 50%, 85% 95%, 70% 90%, 55% 95%, 
+      35% 100%, 20% 85%, 10% 90%, 0% 50%, 
+      10% 5%, 20% 0%, 35% 5%, 50% 0%
     );
   }
 }
@@ -615,4 +632,51 @@ p {
 }
 #svg-container img {
   animation: bounce 8s infinite;
+}
+
+//Raining numbers
+
+#toggleButton {
+  padding: 6px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background-color: #d3e7d3;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 0 3px #FFB20F;
+}
+
+#toggleButton:hover {
+  background-color: #FFB20F;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 0 0 4px #FFB20F;
+}
+
+
+
+
+.raining-numbers {
+  position: relative;
+}
+
+.raining-numbers .number {
+  position: absolute;
+  top: -10%;
+  left: calc(100vw * var(--random));
+  color: #FFB20F;
+  font-size: 1rem;
+  white-space: pre;
+  animation: rain 10s linear infinite;
+  z-index: 1;
+
+}
+
+@keyframes rain {
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(110vh);
+  }
 }
