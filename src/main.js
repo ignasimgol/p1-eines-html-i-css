@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Boton atrás
   document.getElementById("btnBack").addEventListener("click", function() {
-    window.location.href = "index.html";
+    window.location.href = "src/index.html";
   });
 
 
