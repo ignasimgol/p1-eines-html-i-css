@@ -483,6 +483,14 @@ ul li a {
   height: auto; 
   border-radius: 10px;
 }
+.ant-1 picture img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.ant-1 picture img:hover {
+  transform: scale(1.01);
+}
+
 
 @media only screen and (max-width: 1450px) {
   .container {
@@ -624,17 +632,19 @@ p {
     transform: translateY(-50px) rotate(360deg);
   }
 }
+
 #svg-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 300px;
 }
+
 #svg-container img {
   animation: bounce 8s infinite;
 }
 
-//Raining numbers
+//MATRIX
 
 #toggleButton {
   padding: 6px;
@@ -656,9 +666,6 @@ p {
   background-color: #FFB20F;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 0 0 4px #FFB20F;
 }
-
-
-
 
 .raining-numbers {
   position: relative;
