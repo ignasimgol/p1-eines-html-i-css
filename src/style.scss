@@ -71,7 +71,7 @@ body {
 
 
 b {
-  color: $fifth-color;
+  color: $third-color;
 }
 
 p {
@@ -525,6 +525,16 @@ ul li a {
 
 .link-text-2 {
   color: $secundary-color;
+  text-decoration: underline;
+  border: none;
+}
+
+.link-text-2:hover {
+  color: $third-color;
+}
+
+.link-text-2 {
+  color: $secundary-color;
   text-decoration: none;
   border: 1px solid;
   padding: 5px;
@@ -543,7 +553,8 @@ ul li a {
 }
 
 .text a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: $secundary-color;
 }
 
 .text a:hover {
