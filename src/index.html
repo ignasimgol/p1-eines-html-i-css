@@ -6,8 +6,6 @@
     <title>2k38 + DP</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/style.scss">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="icon" type="image/png" href="/img/bot-solid-24.png" sizes="24x24">
@@ -24,12 +22,12 @@
           <div class="title">
 
               <div>
-                <button id="toggleButton">Matrix OFF</button>
+                <button id="toggleButton" aria-label="Efecto On">Matrix OFF</button>
               </div>
 
               <h1 class="h1-index"><a href="https://es.wikipedia.org/wiki/Problema_del_a%C3%B1o_2038" target="_blank">Year 2k38 + ...</a></h1>
 
-              <a href="https://github.com/ignasimgol/p1-eines-html-i-css" target="_blank"><box-icon name='github' type='logo' ></box-icon></a>
+              <a href="https://github.com/ignasimgol/p1-eines-html-i-css" target="_blank" alt="github link"><box-icon name='github' type='logo' ></box-icon></a>
 
               <h2>El curioso problema sobre el tiempo, los programas y un <b>misterioso</b> grupo de música</h2>
               <p>El 19 de enero del 2038 a las cinco y catorce minutos con siete segundos de la madrugada (03:14:07 UTC), puede que los dispositivos, programas, etc. con un sistema de 32 bits que no hayan sido parcheados o arreglados fallen. Pero, ¿por qué? Y ¿que relación tiene esto con la MÚSICA? Investiga en nuestra web 🔎</p>
@@ -88,10 +86,10 @@
 
     <include src="./src/components/footer.html"></include>
     
-    <script src="https://cdn.jsdelivr.net/npm/moment/moment.min.js"></script>
-    <script src="./main.js" type="module"></script>
-    <script src="./contador.js" type="module"></script>
-    <script src="./rain.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment/moment.min.js" async></script>
+    <script src="./main.js" type="module" defer></script>
+    <script src="./contador.js" type="module" defer></script>
+    <script src="./rain.js" type="module" defer></script>
     
   </body>
 </html>

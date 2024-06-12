@@ -14,6 +14,9 @@ $dark-color-2: #222222;
 $dark-color-3: #333333;
 $dark-color-4: #202020;
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 body {
   color: $secundary-color;
   background-color: $primary-color;
@@ -90,7 +93,7 @@ p {
 
 .h1-index a {
   text-decoration: none;
-  color: $fourth-color;
+  color: white;
 }
 
 .h1-index {
@@ -103,11 +106,11 @@ p {
   margin: 0;
 
 
-  color: $fourth-color; 
+  color: $third-color; 
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: $fourth-color;
+  -webkit-text-stroke-color: $third-color;
   
   text-shadow: 1px 1px 1px $fifth-color,
       1px 2px 1px $fifth-color,
@@ -119,6 +122,17 @@ p {
       1px 8px 1px $fifth-color,
       1px 9px 1px $fifth-color,
       1px 10px 1px $fifth-color,
+}
+
+@media (max-width: 768px) {
+
+  .h1-index {
+    font-size: 5rem;
+  }
+
+.index-main-part h2 {
+  font-size: 1.5rem;
+}
 }
 
 .h1-index:hover {
@@ -353,7 +367,7 @@ nav ul li{
   display: inline;
 }
 
-nav ul li a{
+nav ul li a .modified{
   font-size: 0.8rem;
   text-decoration: none;
   border: 2.2px solid $secundary-color;
@@ -370,7 +384,7 @@ nav ul li a{
   transition-property: transform;
 }
 
-nav ul li a:hover {
+nav ul li a .modified:hover {
   color: $fourth-color;
   -webkit-transform: scale(1.1) rotate(4deg);
   transform: scale(1.1) rotate(4deg); 
