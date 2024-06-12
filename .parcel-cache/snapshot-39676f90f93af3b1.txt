@@ -4,7 +4,7 @@
 89C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\es-errors\package.json133626742210785897 0
 65C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\.posthtmlrc133625873401637638 0
 96C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\es-abstract\2020\IsInteger.js133626742258851439 0
-58C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\dist133626783183317229 1
+58C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\dist133626784202556854 1
 88C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\ansi-styles\readme.md133626742219376944 0
 98C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\which-typed-array\test\index.js133626742182219861 0
 94C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\weak-lru-cache\package.json133626742184056118 0
@@ -779,7 +779,7 @@
 108C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\cross-spawn\node_modules\semver\semver.js133626742313843007 0
 113C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\regenerate-unicode-properties\Script\Syriac.js133626742242868411 0
 91C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\safe-regex-test\index.js133626742184233163 0
-68C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\src\style.scss133626783179585494 0
+68C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\src\style.scss133626784201453940 0
 101C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\string.prototype.trimend\README.md133626742198377460 0
 121C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\utils133626742319188532 1
 106C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\@swc\helpers\cjs\_non_iterable_rest.cjs133626742229385929 0
@@ -14682,5 +14682,5 @@
 91C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\dist\daft-punk-3-medium.bc7b4a4a.jpeg133626782973417442 0
 91C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\dist\daft-punk-3-medium.f8a6ba61.avif133626782973504983 0
 84C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\dist\daft-punk-3.c0d6d40d.jpeg133626782973544935 0
-77C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\dist\index.b2d9cf43.css133626783183303108 0
-81C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\dist\index.b2d9cf43.css.map133626783183317229 0
+77C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\dist\index.b2d9cf43.css133626784202496829 0
+81C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\dist\index.b2d9cf43.css.map133626784202536859 0
