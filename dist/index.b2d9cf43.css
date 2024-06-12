@@ -306,7 +306,7 @@ nav ul li {
   display: inline;
 }
 
-nav ul li a .modified {
+.modified {
   vertical-align: middle;
   border: 2.2px solid #e0e0e2;
   border-radius: 20px;
@@ -320,7 +320,7 @@ nav ul li a .modified {
   box-shadow: 0 0 1px #0000;
 }
 
-nav ul li a .modified:hover {
+.modified:hover {
   color: #000;
   background-color: #ffb20f;
   transform: scale(1.1)rotate(4deg);
