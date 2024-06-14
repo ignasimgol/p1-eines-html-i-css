@@ -345,6 +345,20 @@ footer p {
   border-radius: 10px;
 }
 
+#btnBack img {
+  width: 70%;
+}
+
+
+.github-icon img {
+  transition: transform 0.3s ease;
+}
+
+/* Escalar la imagen al hacer hover */
+.github-icon:hover img {
+  transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+}
+
 #btnBack:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);

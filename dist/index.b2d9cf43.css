@@ -288,6 +288,18 @@ footer p {
   display: inline-block;
 }
 
+#btnBack img {
+  width: 70%;
+}
+
+.github-icon img {
+  transition: transform .3s;
+}
+
+.github-icon:hover img {
+  transform: scale(1.1);
+}
+
 #btnBack:hover {
   background-color: #ffb20f;
   transform: scale(1.1);
