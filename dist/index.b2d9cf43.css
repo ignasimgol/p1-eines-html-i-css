@@ -511,6 +511,7 @@ p {
 }
 
 .clip-animation img {
+  width: 100%;
   transition: clip-path 1s;
 }
 
