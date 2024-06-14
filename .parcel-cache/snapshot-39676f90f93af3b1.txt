@@ -779,7 +779,7 @@
 108C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\cross-spawn\node_modules\semver\semver.js133626742313843007 0
 113C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\regenerate-unicode-properties\Script\Syriac.js133626742242868411 0
 91C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\safe-regex-test\index.js133626742184233163 0
-68C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\src\style.scss133626784201453940 0
+68C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\src\style.scss133626788049947935 0
 101C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\string.prototype.trimend\README.md133626742198377460 0
 121C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\utils133626742319188532 1
 106C:\Users\Usuario\Desktop\pac html\p1-eines-html-i-css\node_modules\@swc\helpers\cjs\_non_iterable_rest.cjs133626742229385929 0
